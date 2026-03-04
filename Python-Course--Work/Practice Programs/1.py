@@ -1,3 +1,4 @@
+'''
 #positive or negative
 num = float(input("Enter a number: "))
 if num >= 0:
@@ -49,3 +50,18 @@ if 100 <= num <= 999:
     print(num, "is a 3-digit number")
 else:
     print(num, "is not a 3-digit number")
+'''
+
+#Armstrong number
+
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp //= 10
+    if num == sum:
+        print(num, "is an armstrong number")
+    else:
+        print(num, "is not an armstrong number")
